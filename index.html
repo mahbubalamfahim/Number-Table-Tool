@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Table</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <div class="container w-330 m-auto">
+      <!-- Number Table Part Start -->
+      <div class="flex justify-center items-center pt-30">
+        <div class="numberTableBox w-150 text-center">
+          <!-- Number Table Heading Start -->
+          <div class="numberTableHeading mb-10">
+            <h1 class="text-[42px] font-bold text-black">Number Table</h1>
+            <p class="text-[18px] text-[#777777] mt-3">
+              Enter a number and see its multiplication table
+            </p>
+          </div>
+          <!-- Number Table Heading End -->
+
+          <!-- Number Input Part Start -->
+          <div class="numberInputPart mb-5">
+            <input
+              id="numberInput"
+              type="number"
+              placeholder="Enter a number"
+              class="w-full h-20 px-8 rounded-full border border-[#DDDDDD] bg-white outline-none text-[20px] font-semibold placeholder:text-[#BBBBBB] focus:border-[#7041D3] duration-300"
+            />
+          </div>
+          <!-- Number Input Part End -->
+
+          <!-- Generate Button Part Start -->
+          <div class="generateButtonPart mb-8">
+            <button
+              id="generateButton"
+              class="bg-[#7041D3] text-white text-[20px] font-semibold px-12 py-4 rounded-full hover:bg-[#5B2DB8] duration-300"
+            >
+              Generate Table
+            </button>
+          </div>
+          <!-- Generate Button Part End -->
+
+          <!-- Error Message Part Start -->
+          <div id="errorMessage" hidden>
+            <h3
+              class="bg-[#CC3030] text-white text-[20px] font-semibold py-3 px-5 rounded-xl"
+            >
+              Please enter a number
+            </h3>
+          </div>
+          <!-- Error Message Part End -->
+
+          <!-- Number Table Result Part Start -->
+          <div
+            id="tableBox"
+            hidden
+            class="mt-8 bg-white rounded-3xl p-8 shadow-lg border border-[#E8E2FF]"
+          >
+            <!-- Table Heading Start -->
+            <div class="tableHeading mb-6">
+              <h2
+                id="tableTitle"
+                class="text-[28px] font-bold text-[#7041D3]"
+              ></h2>
+            </div>
+            <!-- Table Heading End -->
+
+            <!-- Table Result Start -->
+            <div
+              id="tableResult"
+              class="grid grid-cols-2 gap-3 text-[20px] font-semibold text-[#333333]"
+            ></div>
+            <!-- Table Result End -->
+          </div>
+          <!-- Number Table Result Part End -->
+        </div>
+      </div>
+      <!-- Number Table Part End -->
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
